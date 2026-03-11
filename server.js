@@ -11,7 +11,7 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 
 app.use(cors({
-  origin: 'https://your-app.vercel.app', // replace with your real Vercel URL
+  origin: 'https://food-app-frontend-one.vercel.app',
   credentials: true,
 }));
 app.use(express.json());
