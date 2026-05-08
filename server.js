@@ -11,7 +11,11 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 
 app.use(cors({
-  origin: 'https://food-app-frontend-one.vercel.app',
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://food-app-frontend-one.vercel.app'
+  ],
   credentials: true,
 }));
 app.use(express.json());
